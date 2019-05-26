@@ -1,9 +1,29 @@
-<h1>안녕하세요, 여기서 글자를 세세요! </h1>
-
-<a href="{%url 'about'%}">ABOUT</a>
-
-<form action="{%url 'result'%}">
-    <textarea cols="40" rows="10" name= "fulltext"></textarea>
-    <br>
-    <input type="submit" value="count!">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 10%
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Text and Word count </h1>
+    
+    <a href="{%url 'about'%}">ABOUT</a>
+        <br><Br>
+    <form action="{%url 'result'%}">
+        <textarea cols="100" rows="10" name= "fulltext"></textarea>
+        <br>
+        <input type="submit" type="button" class="btn btn-outline-dark" value="count!">
+    </form>
+    </div>
+</body>
+</html>

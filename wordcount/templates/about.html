@@ -1,5 +1,27 @@
-<h1>About </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>About</h1>
 
-<p>안녕하세요, 여기는 글자를 세주는 워드카운트 웹페이지입니다. 여기에서 글자를 세세요.</p>
+    <p>긴 글의 단어 개수가 궁금하시나요? 혹은 글자수가 궁금하시나요?<br>
+        그럴 땐 wordcount를 이용해보세요!</p>
 
-<a href="{%url 'home'%}">Home 으로 돌아가기</a>
+    <a href="{%url 'home'%}"><button type="button" class="btn btn-outline-dark">wordcount 이용하기</button></a>
+    </div>
+</body>
+</html>
